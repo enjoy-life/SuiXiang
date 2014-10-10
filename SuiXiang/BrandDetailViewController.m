@@ -138,7 +138,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
     if (scrollView.contentOffset.y < 0) {
-        [self.parallaxView setZoomSpeed:CGPointMake(1.06, 1.06) forView:self.topView];
+        [self.parallaxView setZoomSpeed:CGPointMake(0.7, 0.7) forView:self.topView];
     }else{
         [self.parallaxView setZoomSpeed:CGPointMake(0, 0) forView:self.topView];
     }
