@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="I1n-Yi-raZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A386b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="yK6-9c-HLG">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -8,6 +9,7 @@
         <scene sceneID="6Qx-8j-0X2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I1n-Yi-raZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="nmq-hH-9bi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="G85-Wa-Ol9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -20,7 +22,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yER-1z-PUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2359" y="1"/>
+            <point key="canvasLocation" x="2891" y="1"/>
         </scene>
         <!--品牌折扣-->
         <scene sceneID="tBg-cL-pMq">
@@ -97,7 +99,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Item" id="Aqk-x5-PNA"/>
+                        <barButtonItem id="Aqk-x5-PNA"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="品牌折扣" id="fkU-Cq-wcs"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -109,30 +111,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PH7-0E-CvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2802" y="1"/>
+            <point key="canvasLocation" x="3334" y="1"/>
         </scene>
         <!--LACOSTE-->
         <scene sceneID="PhN-tR-kG1">
             <objects>
                 <viewController id="T5r-YC-B8I" customClass="BrandDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U9h-Wd-OTj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="WR3-Ch-RjE" customClass="LTParallaxScrollView">
-                                <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="900"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail.jpg" id="WXj-OK-k2O">
-                                        <rect key="frame" x="0.0" y="-40" width="320" height="260"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <rect key="frame" x="0.0" y="24" width="320" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" id="QzS-0c-5gF">
-                                        <rect key="frame" x="0.0" y="180" width="320" height="800"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="0.0" y="244" width="320" height="800"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" id="Ghf-KY-FJ2">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="557"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LACOSTE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7nG-ao-Yr1">
@@ -318,7 +320,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="LACOSTE" id="ZIc-ZX-w2f"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="568"/>
+                    <size key="freeformSize" width="320" height="900"/>
                     <connections>
                         <outlet property="brandTitleLabel" destination="7nG-ao-Yr1" id="CTs-33-mYo"/>
                         <outlet property="contentView" destination="FcR-Nv-rXF" id="vJj-bq-jN7"/>
@@ -329,7 +331,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="llX-lY-ZMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3268" y="1"/>
+            <point key="canvasLocation" x="3800" y="1"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="42c-6u-dgw">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yK6-9c-HLG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Uxd-x5-8SP">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="I1n-Yi-raZ" kind="relationship" relationship="viewControllers" id="ZbC-Cd-TBW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xB6-jZ-0vX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2359" y="1"/>
         </scene>
     </scenes>
     <resources>
